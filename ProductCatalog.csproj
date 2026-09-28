@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00011b846f00};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{B6E3D2E1-2C65-4D1D-9E22-123456789001}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ProductCatalog</RootNamespace>
+    <AssemblyName>ProductCatalog</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

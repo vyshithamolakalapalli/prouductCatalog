@@ -1,0 +1,43 @@
+@model ProductCatalog.Models.Product
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Product</title>
+</head>
+<body>
+    <h2>ADD NEW PRODUCT</h2>
+
+    @using (Html.BeginForm())
+    {
+        <table>
+            <tr>
+                <td>Product Name</td>
+                <td>@Html.TextBoxFor(m => m.ProductName)</td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>@Html.TextBoxFor(m => m.Category)</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>@Html.TextBoxFor(m => m.Price)</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>@Html.TextBoxFor(m => m.Quantity)</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>@Html.TextAreaFor(m => m.Description, 5, 35, null)</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Add Product" />
+                </td>
+            </tr>
+        </table>
+    }
+
+    <p>@Html.ActionLink("Back to Product Catalog", "Index")</p>
+</body>
+</html>
